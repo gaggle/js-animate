@@ -9,7 +9,8 @@
     "build": "npm run build:js && npm run build:js:min",
     "build:js": "browserify lib/index.js > dist/js-animate.js",
     "build:js:min": "browserify lib/index.js -d -p [minifyify --compressPath . --map js-animate.js.map --output dist/js-animate.js.map] > dist/js-animate.min.js",
-    "version": "npm run build && git add -A dist"
+    "version": "npm run build && git add -A dist",
+    "postversion": "git push && git push --tags"
   },
   "author": "Jon Lauridsen <mail@jonlauridsen.com>",
   "license": "MIT",
