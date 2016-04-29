@@ -7,6 +7,10 @@ before_script:
 script:
   - npm run test
   - npm run test:ci
+deploy:
+  - "echo 'ready?'"
+  on:
+    tags: true
 cache:
   directories:
     - node_modules
