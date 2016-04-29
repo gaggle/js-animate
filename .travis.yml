@@ -6,6 +6,7 @@ before_script:
   - phantomjs --webdriver=4444 2>&1 >/dev/null &
 script:
   - npm run test
+  - npm run test:ci
 cache:
   directories:
     - node_modules
