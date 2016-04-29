@@ -8,7 +8,8 @@
     "test:ci": "karma start karma.sauce.conf.js",
     "build": "npm run build:js && npm run build:js:min",
     "build:js": "browserify lib/index.js > dist/js-animate.js",
-    "build:js:min": "browserify lib/index.js -d -p [minifyify --compressPath . --map js-animate.js.map --output dist/js-animate.js.map] > dist/js-animate.min.js"
+    "build:js:min": "browserify lib/index.js -d -p [minifyify --compressPath . --map js-animate.js.map --output dist/js-animate.js.map] > dist/js-animate.min.js",
+    "version": "npm run build && git add -A dist"
   },
   "author": "Jon Lauridsen <mail@jonlauridsen.com>",
   "license": "MIT",
