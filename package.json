@@ -5,7 +5,10 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "karma start",
-    "test:ci": "karma start karma.sauce.conf.js"
+    "test:ci": "karma start karma.sauce.conf.js",
+    "build": "npm run build:js && npm run build:js:min",
+    "build:js": "browserify lib/index.js > dist/js-animate.js",
+    "build:js:min": "browserify lib/index.js -d -p [minifyify --compressPath . --map js-animate.js.map --output dist/js-animate.js.map] > dist/js-animate.min.js"
   },
   "author": "Jon Lauridsen <mail@jonlauridsen.com>",
   "license": "MIT",
@@ -25,6 +28,7 @@
     "karma-mocha": "^0.2.2",
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-sauce-launcher": "^0.3.1",
+    "minifyify": "^7.3.3",
     "mocha": "^2.4.5",
     "phantomjs-prebuilt": "^2.1.7"
   }
