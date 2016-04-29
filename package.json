@@ -1,0 +1,30 @@
+{
+  "name": "js-animate",
+  "version": "0.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "karma start",
+    "test:ci": "karma start karma.sauce.conf.js"
+  },
+  "author": "Jon Lauridsen <mail@jonlauridsen.com>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "browserify-istanbul": "^2.0.0",
+    "chai": "^3.5.0",
+    "es6-promise": "^3.1.2",
+    "istanbul": "^0.4.3",
+    "karma": "^0.13.22",
+    "karma-browserify": "^5.0.4",
+    "karma-chai": "^0.1.0",
+    "karma-coverage": "^0.5.5",
+    "karma-mocha": "^0.2.2",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "mocha": "^2.4.5",
+    "phantomjs-prebuilt": "^2.1.7"
+  }
+}
