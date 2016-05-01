@@ -1,8 +1,7 @@
 {
   "name": "js-animate",
-  "version": "0.1.0",
-  "description": "",
-  "main": "lib/index.js",
+  "version": "0.1.1",
+  "main": "index.js",
   "scripts": {
     "test": "karma start",
     "test:ci": "karma start karma.ci.conf.js"

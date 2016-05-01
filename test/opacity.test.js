@@ -1,6 +1,6 @@
 "use strict";
 require("es6-promise").polyfill()
-var opacity = require("../lib/opacity")
+var opacity = require("../opacity")
 
 describe("opacity", function () {
   var el
