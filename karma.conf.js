@@ -5,13 +5,11 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      "./test/*.js",
-      "./lib/*js"
+      "./test/*.js"
     ],
 
     preprocessors: {
-      "./test/*.js": ["browserify"],
-      "./lib/*.js": ["browserify"]
+      "./test/*.js": ["browserify"]
     },
 
     reporters: ["dots", "coverage"],

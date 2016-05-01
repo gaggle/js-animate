@@ -1,6 +1,6 @@
 "use strict";
 var map = require("lodash/map")
-var easing = require("../lib/easing")
+var easing = require("../easing")
 
 describe("easing", function () {
   var data = {

@@ -1,6 +1,6 @@
 "use strict";
 require("es6-promise").polyfill()
-var animate = require("../lib/animate")
+var animate = require("../animate")
 
 describe("animate", function () {
   var clock
