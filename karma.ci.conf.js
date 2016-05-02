@@ -38,26 +38,17 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      "./test/*.js",
-      "./lib/*.js"
+      "./test/*.js"
     ],
 
     preprocessors: {
-      "./test/*.js": ["browserify"],
-      "./lib/*.js": ["browserify"]
+      "./test/*.js": ["browserify"]
     },
 
     reporters: ["dots", "saucelabs"],
 
     browserify: {
-      debug: true, // generate source maps for easier debugging
-      transform: ["browserify-istanbul"]
-    },
-
-    coverageReporter: {
-      reporters: [
-        {type: "lcov", dir: ".coverage"}
-      ]
+      debug: true // generate source maps for easier debugging
     },
 
     urlRoot: "/__karma__/",
@@ -76,7 +67,7 @@ module.exports = function (config) {
     browserNoActivityTimeout: 90000,
 
     sauceLabs: {
-      testName: "js-animate tests",
+      testName: "js-animate",
       tunnelIdentifier: process.env.TRAVIS_JOB_NUMBER,
       startConnect: false
     }

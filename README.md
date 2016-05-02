@@ -1,5 +1,6 @@
 # js-animate
 [![Build Status](https://travis-ci.org/gaggle/js-animate.svg?branch=master)](https://travis-ci.org/gaggle/js-animate)
+[![Coverage Status](https://coveralls.io/repos/github/gaggle/js-animate/badge.svg?branch=master)](https://coveralls.io/github/gaggle/js-animate?branch=master)
 
 Very simple js-based animation. Based on http://jsfiddle.net/LzX4s/, I just switched to Promises and added tests.
 
